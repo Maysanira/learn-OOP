@@ -6,7 +6,22 @@ require_once 'robot.php';
 require_once 'hewan.php';
 require_once 'orang.php';
 
-echo orang::$suara();
+$robot = new robot('testing',10);
+
+$robot->set_suara('okey dokey')->set_berat(15);
+
+
+echo $robot->suara.' - '.$robot->berat;
+
+
+
+
+
+
+
+
+
+// echo orang::$suara();
 // $robot = new robot('ngik ngik ngok',20);
 // echo $robot->suara;
 // echo 'beratnya..'.$robot1->get_berat().'<br>';

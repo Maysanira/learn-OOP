@@ -2,6 +2,8 @@
 
 class robot{
 
+    
+// public protected private
   //property
   public $suara;
   public $berat;
@@ -40,8 +42,10 @@ public function set_berat(){
 public function get_berat(){
   return $this->berat;
 } 
-}
-class robot_hewan extends robot{
+
+
 
 }
+
+
 ?>

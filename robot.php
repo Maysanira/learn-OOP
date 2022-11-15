@@ -2,9 +2,9 @@
 
 class robot{
 
-   //property
-    public $suara = ;
-    public $berat = ;
+  //property
+  public $suara;
+  public $berat;
 
 // metode
 // public function bersuara(){
@@ -20,16 +20,28 @@ class robot{
 // }
 
 // konstruktor
-public function __construct(){
-    echo 'halo robot ...';
+public function __construct($suara,$berat){
+  $this->suara = $suara;
+  $this->berat = $berat;
+  // echo 'halo robot ...';
 }
 
 // metode set (setting) && get
 public function set_suara($suara){
-        $this->suara = $suara;
+      $this->suara = $suara;
 } 
 public function get_suara(){
-    return $this->suara;
+  return $this->suara;
 }
+
+public function set_berat(){
+  $this->berat = $berat;
+}
+public function get_berat(){
+  return $this->berat;
+} 
+}
+class robot_hewan extends robot{
+
 }
 ?>
